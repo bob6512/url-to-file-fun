@@ -71,16 +71,16 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col items-center space-y-4">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-6">
                 <img 
                   src={proudlySALogo} 
                   alt="Proudly South African" 
-                  className="h-12 brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  className="h-16 opacity-80 hover:opacity-100 transition-opacity"
                 />
                 <img 
                   src={tpnLogo} 
                   alt="TPN Credit Bureau" 
-                  className="h-12 brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  className="h-16 opacity-80 hover:opacity-100 transition-opacity"
                 />
               </div>
             </div>
