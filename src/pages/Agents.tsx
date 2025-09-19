@@ -60,11 +60,11 @@ const Agents = () => {
     },
     {
       id: 5,
-      name: "Priya Sharma",
+      name: "Arjun Patel",
       title: "Property Manager",
       specialization: "Rental Management",
       experience: "7 years",
-      email: "priya@momentumproperty.co.za",
+      email: "arjun@momentumproperty.co.za",
       rating: 4.9,
       sales: 98,
       image: lisaImage
