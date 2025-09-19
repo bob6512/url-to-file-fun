@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Mail, Star, Award } from "lucide-react";
+import sarahImage from "@/assets/agent-sarah.jpg";
+import michaelImage from "@/assets/agent-michael.jpg";
+import amaraImage from "@/assets/agent-amara.jpg";
+import davidImage from "@/assets/agent-david.jpg";
+import lisaImage from "@/assets/agent-lisa.jpg";
+import jamesImage from "@/assets/agent-james.jpg";
+import nalediImage from "@/assets/agent-naledi.jpg";
 
 const Agents = () => {
   const agents = [
@@ -16,7 +23,7 @@ const Agents = () => {
       email: "sarah@momentumproperty.co.za",
       rating: 4.9,
       sales: 156,
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face"
+      image: sarahImage
     },
     {
       id: 2,
@@ -27,7 +34,7 @@ const Agents = () => {
       email: "michael@momentumproperty.co.za",
       rating: 4.8,
       sales: 89,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+      image: michaelImage
     },
     {
       id: 3,
@@ -38,7 +45,7 @@ const Agents = () => {
       email: "amara@momentumproperty.co.za",
       rating: 5.0,
       sales: 67,
-      image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=300&fit=crop&crop=face"
+      image: amaraImage
     },
     {
       id: 4,
@@ -49,7 +56,7 @@ const Agents = () => {
       email: "david@momentumproperty.co.za",
       rating: 4.7,
       sales: 134,
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&crop=face"
+      image: davidImage
     },
     {
       id: 5,
@@ -60,7 +67,7 @@ const Agents = () => {
       email: "lisa@momentumproperty.co.za",
       rating: 4.9,
       sales: 98,
-      image: "https://images.unsplash.com/photo-1594736797933-d0c6d67191bc?w=300&h=300&fit=crop&crop=face"
+      image: lisaImage
     },
     {
       id: 6,
@@ -71,7 +78,7 @@ const Agents = () => {
       email: "james@momentumproperty.co.za",
       rating: 4.8,
       sales: 112,
-      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=300&fit=crop&crop=face"
+      image: jamesImage
     },
     {
       id: 7,
@@ -82,7 +89,7 @@ const Agents = () => {
       email: "naledi@momentumproperty.co.za",
       rating: 4.9,
       sales: 87,
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face"
+      image: nalediImage
     }
   ];
 
