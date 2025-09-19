@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Phone, Mail, Star, Award } from "lucide-react";
+import { MessageCircle, Mail, Star, Award } from "lucide-react";
 
 const Agents = () => {
   const agents = [
@@ -13,7 +13,6 @@ const Agents = () => {
       title: "Senior Property Consultant",
       specialization: "Residential Sales",
       experience: "8 years",
-      phone: "+27 11 123 4567",
       email: "sarah@momentumproperty.co.za",
       rating: 4.9,
       sales: 156,
@@ -25,7 +24,6 @@ const Agents = () => {
       title: "Commercial Property Specialist",
       specialization: "Commercial Sales",
       experience: "12 years",
-      phone: "+27 11 123 4568",
       email: "michael@momentumproperty.co.za",
       rating: 4.8,
       sales: 89,
@@ -37,7 +35,6 @@ const Agents = () => {
       title: "Luxury Property Advisor",
       specialization: "Luxury Residential",
       experience: "6 years",
-      phone: "+27 11 123 4569",
       email: "amara@momentumproperty.co.za",
       rating: 5.0,
       sales: 67,
@@ -49,7 +46,6 @@ const Agents = () => {
       title: "Investment Property Consultant",
       specialization: "Investment Properties",
       experience: "10 years",
-      phone: "+27 11 123 4570",
       email: "david@momentumproperty.co.za",
       rating: 4.7,
       sales: 134,
@@ -61,7 +57,6 @@ const Agents = () => {
       title: "Property Manager",
       specialization: "Rental Management",
       experience: "7 years",
-      phone: "+27 11 123 4571",
       email: "lisa@momentumproperty.co.za",
       rating: 4.9,
       sales: 98,
@@ -73,7 +68,6 @@ const Agents = () => {
       title: "First-time Buyer Specialist",
       specialization: "First-time Buyers",
       experience: "5 years",
-      phone: "+27 11 123 4572",
       email: "james@momentumproperty.co.za",
       rating: 4.8,
       sales: 112,
@@ -85,7 +79,6 @@ const Agents = () => {
       title: "Property Development Specialist",
       specialization: "New Developments",
       experience: "9 years",
-      phone: "+27 11 123 4573",
       email: "naledi@momentumproperty.co.za",
       rating: 4.9,
       sales: 87,
@@ -146,21 +139,25 @@ const Agents = () => {
                     
                     <div className="space-y-2 mb-6">
                       <div className="flex items-center text-sm">
-                        <Phone className="w-4 h-4 text-accent mr-2" />
-                        {agent.phone}
-                      </div>
-                      <div className="flex items-center text-sm">
                         <Mail className="w-4 h-4 text-accent mr-2" />
                         {agent.email}
                       </div>
                     </div>
                     
                     <div className="grid grid-cols-2 gap-2">
-                      <Button variant="outline" size="sm">
-                        <Phone className="w-4 h-4 mr-1" />
-                        Call
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        onClick={() => window.open(`https://wa.me/27604521354?text=Hi, I'm interested in your property services`, '_blank')}
+                      >
+                        <MessageCircle className="w-4 h-4 mr-1" />
+                        WhatsApp
                       </Button>
-                      <Button size="sm" className="bg-gradient-accent">
+                      <Button 
+                        size="sm" 
+                        className="bg-gradient-accent"
+                        onClick={() => window.location.href = `mailto:${agent.email}`}
+                      >
                         <Mail className="w-4 h-4 mr-1" />
                         Email
                       </Button>
