@@ -123,7 +123,7 @@ const Agents = () => {
                     <img 
                       src={agent.image} 
                       alt={agent.name}
-                      className="w-full h-64 object-cover object-top rounded-t-lg"
+                      className={`w-full h-64 object-cover rounded-t-lg ${agent.id === 7 ? 'object-[center_20%]' : 'object-top'}`}
                     />
                     <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground">
                       <Award className="w-3 h-3 mr-1" />
