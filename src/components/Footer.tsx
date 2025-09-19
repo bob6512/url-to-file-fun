@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import momentumLogo from "@/assets/momentum-logo.png";
-import proudlySALogo from "@/assets/proudly-south-african-logo.png";
-import tpnLogo from "@/assets/tpn-credit-bureau-logo.png";
+import proudlySALogo from "@/assets/proudly-south-african-official.png";
+import tpnLogo from "@/assets/tpn-credit-bureau-official.png";
 
 const Footer = () => {
   return (
