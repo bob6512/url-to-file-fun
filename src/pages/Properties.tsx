@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -207,8 +208,8 @@ const Properties = () => {
                     </div>
                   </div>
                   
-                  <Button className="w-full mt-4 group-hover:bg-primary transition-colors">
-                    View Details
+                  <Button asChild className="w-full mt-4 group-hover:bg-primary transition-colors">
+                    <Link to={`/property/${property.id}`}>View Details</Link>
                   </Button>
                 </CardContent>
               </Card>

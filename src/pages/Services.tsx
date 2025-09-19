@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -235,8 +236,8 @@ const Services = () => {
             <Button size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent-light">
               Get Free Consultation
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              View Our Properties
+            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Link to="/properties">View Our Properties</Link>
             </Button>
           </div>
         </div>
