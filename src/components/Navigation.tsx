@@ -12,6 +12,7 @@ const Navigation = () => {
     { href: "/properties", label: "Search Properties" },
     { href: "/agents", label: "Our Agents" },
     { href: "/services", label: "Services" },
+    { href: "/calculators", label: "Calculators" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact Us" },
   ];

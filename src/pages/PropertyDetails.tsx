@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -356,8 +356,8 @@ const PropertyDetails = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-primary mb-4">Quick Actions</h3>
                   <div className="space-y-3">
-                    <Button variant="outline" className="w-full">
-                      Calculate Bond
+                    <Button asChild variant="outline" className="w-full">
+                      <Link to="/calculators/bond">Calculate Bond</Link>
                     </Button>
                     <Button variant="outline" className="w-full">
                       Download Brochure
