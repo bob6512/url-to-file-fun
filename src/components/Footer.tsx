@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import momentumLogo from "@/assets/momentum-logo.png";
+import proudlySALogo from "@/assets/proudly-south-african-logo.png";
+import tpnLogo from "@/assets/tpn-credit-bureau-logo.png";
 
 const Footer = () => {
   return (
@@ -65,7 +67,30 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
+        {/* Branding Section */}
+        <div className="border-t border-primary-foreground/20 mt-8 pt-8">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+              <div className="flex items-center space-x-4">
+                <img 
+                  src={proudlySALogo} 
+                  alt="Proudly South African" 
+                  className="h-12 brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                />
+                <img 
+                  src={tpnLogo} 
+                  alt="TPN Credit Bureau" 
+                  className="h-12 brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            </div>
+            <p className="text-xs text-primary-foreground/50 text-center">
+              Proudly South African | TPN Credit Bureau Verified
+            </p>
+          </div>
+        </div>
+
+        <div className="border-t border-primary-foreground/20 mt-6 pt-6 text-center">
           <p className="text-primary-foreground/60">
             © 2024 Momentum Property. All rights reserved. | Privacy Policy | Terms of Service
           </p>
