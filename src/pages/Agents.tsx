@@ -30,7 +30,7 @@ const Agents = () => {
       name: "Thabo Mthembu",
       title: "Commercial Property Specialist",
       specialization: "Commercial Sales",
-      experience: "12 years",
+      experience: "4 years",
       email: "thabo@momentumproperty.co.za",
       rating: 4.8,
       sales: 89,
