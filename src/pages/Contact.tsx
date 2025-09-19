@@ -5,8 +5,48 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch("https://formspree.io/f/mzzandln", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "We'll get back to you within 2 hours.",
+        });
+        e.currentTarget.reset();
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const contactInfo = [
     {
       icon: <Phone className="w-6 h-6 text-accent" />,
@@ -94,44 +134,46 @@ const Contact = () => {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-primary mb-6">Send us a Message</h2>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">First Name</label>
-                    <Input placeholder="Your first name" />
+                    <Input name="firstName" placeholder="Your first name" required />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">Last Name</label>
-                    <Input placeholder="Your last name" />
+                    <Input name="lastName" placeholder="Your last name" required />
                   </div>
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Email</label>
-                  <Input type="email" placeholder="your.email@example.com" />
+                  <Input name="email" type="email" placeholder="your.email@example.com" required />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Phone</label>
-                  <Input placeholder="+27 11 123 4567" />
+                  <Input name="phone" placeholder="+27 11 123 4567" />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Subject</label>
-                  <Input placeholder="How can we help you?" />
+                  <Input name="subject" placeholder="How can we help you?" required />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Message</label>
                   <Textarea 
+                    name="message"
                     placeholder="Tell us about your property needs, questions, or how we can assist you..."
                     rows={6}
+                    required
                   />
                 </div>
                 
-                <Button size="lg" className="w-full bg-gradient-accent">
+                <Button size="lg" className="w-full bg-gradient-accent" type="submit" disabled={isSubmitting}>
                   <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
