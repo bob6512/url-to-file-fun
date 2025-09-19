@@ -14,7 +14,7 @@ const Agents = () => {
       specialization: "Residential Sales",
       experience: "8 years",
       phone: "+27 11 123 4567",
-      email: "sarah@momentumproperties.co.za",
+      email: "sarah@momentumproperty.co.za",
       rating: 4.9,
       sales: 156,
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b093?w=300&h=300&fit=crop&crop=face"
@@ -26,7 +26,7 @@ const Agents = () => {
       specialization: "Commercial Sales",
       experience: "12 years",
       phone: "+27 11 123 4568",
-      email: "michael@momentumproperties.co.za",
+      email: "michael@momentumproperty.co.za",
       rating: 4.8,
       sales: 89,
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
@@ -38,7 +38,7 @@ const Agents = () => {
       specialization: "Luxury Residential",
       experience: "6 years",
       phone: "+27 11 123 4569",
-      email: "amara@momentumproperties.co.za",
+      email: "amara@momentumproperty.co.za",
       rating: 5.0,
       sales: 67,
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
@@ -50,7 +50,7 @@ const Agents = () => {
       specialization: "Investment Properties",
       experience: "10 years",
       phone: "+27 11 123 4570",
-      email: "david@momentumproperties.co.za",
+      email: "david@momentumproperty.co.za",
       rating: 4.7,
       sales: 134,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
@@ -62,7 +62,7 @@ const Agents = () => {
       specialization: "Rental Management",
       experience: "7 years",
       phone: "+27 11 123 4571",
-      email: "lisa@momentumproperties.co.za",
+      email: "lisa@momentumproperty.co.za",
       rating: 4.9,
       sales: 98,
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
@@ -74,10 +74,22 @@ const Agents = () => {
       specialization: "First-time Buyers",
       experience: "5 years",
       phone: "+27 11 123 4572",
-      email: "james@momentumproperties.co.za",
+      email: "james@momentumproperty.co.za",
       rating: 4.8,
       sales: 112,
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      id: 7,
+      name: "Naledi Mokoena",
+      title: "Property Development Specialist",
+      specialization: "New Developments",
+      experience: "9 years",
+      phone: "+27 11 123 4573",
+      email: "naledi@momentumproperty.co.za",
+      rating: 4.9,
+      sales: 87,
+      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&h=300&fit=crop&crop=face"
     }
   ];
 

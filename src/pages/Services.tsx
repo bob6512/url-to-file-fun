@@ -204,7 +204,7 @@ const Services = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">Why Choose Momentum Properties</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">Why Choose Momentum Property</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We combine local expertise with innovative approaches to deliver exceptional results for every client.
             </p>

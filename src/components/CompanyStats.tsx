@@ -15,7 +15,7 @@ const CompanyStats = () => {
             One of South Africa's Fastest-Growing Real Estate Agencies
           </h2>
           <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-            Momentum Properties is proud to be one of the fastest-growing real estate firms in South Africa — and we're just getting started.
+            Momentum Property is proud to be one of the fastest-growing real estate firms in South Africa — and we're just getting started.
             <br /><br />
             With nearly 35 dedicated agents and over 750 active listings across residential, commercial, and rental markets, we offer unmatched reach and personalized service. Beyond sales and rentals, we also provide professional property management services for landlords — giving you peace of mind and reliable results.
             <br /><br />

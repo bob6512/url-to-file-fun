@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={momentumLogo} alt="Momentum Properties" className="h-10 w-10 brightness-0 invert" />
-              <span className="text-xl font-bold">Momentum Properties</span>
+              <img src={momentumLogo} alt="Momentum Property" className="h-10 w-10 brightness-0 invert" />
+              <span className="text-xl font-bold">Momentum Property</span>
             </div>
             <p className="text-primary-foreground/80">
               Building momentum in real estate. Your trusted partner for buying, selling, and investing in South Africa.
@@ -67,7 +67,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60">
-            © 2024 Momentum Properties. All rights reserved. | Privacy Policy | Terms of Service
+            © 2024 Momentum Property. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </div>

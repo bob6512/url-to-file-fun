@@ -24,8 +24,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={momentumLogo} alt="Momentum Properties" className="h-10 w-10" />
-            <span className="text-xl font-bold text-primary">Momentum Properties</span>
+            <img src={momentumLogo} alt="Momentum Property" className="h-10 w-10" />
+            <span className="text-xl font-bold text-primary">Momentum Property</span>
           </Link>
 
           {/* Desktop Navigation */}

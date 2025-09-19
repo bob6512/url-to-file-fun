@@ -53,7 +53,7 @@ const About = () => {
       <section className="bg-gradient-hero py-16 text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Momentum Properties</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Momentum Property</h1>
             <p className="text-xl opacity-90 leading-relaxed">
               Building momentum in South Africa's real estate market through trust, expertise, and unwavering commitment to our clients' success.
             </p>
@@ -69,7 +69,7 @@ const About = () => {
               <h2 className="text-3xl font-bold text-primary mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded with a vision to transform the real estate experience in South Africa, Momentum Properties has quickly established itself as one of the country's fastest-growing property firms. Our journey began with a simple belief: that every property transaction should be built on trust, expertise, and genuine care for our clients' needs.
+                  Founded with a vision to transform the real estate experience in South Africa, Momentum Property has quickly established itself as one of the country's fastest-growing property firms. Our journey began with a simple belief: that every property transaction should be built on trust, expertise, and genuine care for our clients' needs.
                 </p>
                 <p>
                   From our humble beginnings, we've grown into a dynamic team of over 35 dedicated professionals, each bringing unique expertise and a shared commitment to excellence. Our success isn't measured just in properties sold, but in the lasting relationships we've built and the dreams we've helped realize.
