@@ -151,15 +151,17 @@ const Agents = () => {
                       </div>
                     </div>
                     
-                    <div className="grid grid-cols-2 gap-2">
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        onClick={() => window.open(`https://wa.me/27604521354?text=Hi, I'm interested in your property services`, '_blank')}
-                      >
-                        <MessageCircle className="w-4 h-4 mr-1" />
-                        WhatsApp
-                      </Button>
+                    <div className={`grid gap-2 ${agent.id === 7 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                      {agent.id === 7 && (
+                        <Button 
+                          variant="outline" 
+                          size="sm"
+                          onClick={() => window.open(`https://wa.me/27604521354?text=Hi, I'm interested in your property services`, '_blank')}
+                        >
+                          <MessageCircle className="w-4 h-4 mr-1" />
+                          WhatsApp
+                        </Button>
+                      )}
                       <Button 
                         size="sm" 
                         className="bg-gradient-accent"
