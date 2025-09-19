@@ -63,7 +63,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6 text-accent" />,
       title: "Office",
-      details: ["123 Business District", "Sandton City, Johannesburg", "2196, South Africa"],
+      details: ["456 Waterfront Drive", "V&A Waterfront, Cape Town", "8001, South Africa"],
       description: "Visit us for a personal consultation"
     },
     {
@@ -76,13 +76,7 @@ const Contact = () => {
 
   const offices = [
     {
-      name: "Johannesburg Head Office",
-      address: "123 Business District, Sandton City",
-      phone: "+27 11 123 4567",
-      email: "johannesburg@momentumproperties.co.za"
-    },
-    {
-      name: "Cape Town Branch",
+      name: "Cape Town Head Office",
       address: "456 Waterfront Drive, V&A Waterfront",
       phone: "+27 21 456 7890",
       email: "capetown@momentumproperties.co.za"

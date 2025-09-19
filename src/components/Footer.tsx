@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-accent mt-1" />
-                <span>123 Business District<br />Sandton City, Johannesburg<br />2196, South Africa</span>
+                <span>456 Waterfront Drive<br />V&A Waterfront, Cape Town<br />8001, South Africa</span>
               </div>
             </div>
           </div>
