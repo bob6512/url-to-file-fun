@@ -60,11 +60,11 @@ const Agents = () => {
     },
     {
       id: 5,
-      name: "Lerato Mahlangu",
+      name: "Priya Sharma",
       title: "Property Manager",
       specialization: "Rental Management",
       experience: "7 years",
-      email: "lerato@momentumproperty.co.za",
+      email: "priya@momentumproperty.co.za",
       rating: 4.9,
       sales: 98,
       image: lisaImage
