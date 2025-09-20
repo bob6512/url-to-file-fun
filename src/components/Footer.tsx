@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={momentumLogo} alt="Momentum Property" className="h-10 w-10 brightness-0 invert" />
+              <img src={momentumLogo} alt="Momentum Property" className="h-10 w-10" />
               <span className="text-xl font-bold">Momentum Property</span>
             </div>
             <p className="text-primary-foreground/80">
