@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import momentumLogo from "@/assets/momentum-logo.png";
+import proudlySALogo from "@/assets/proudly-south-african-official.png";
+import tpnLogo from "@/assets/tpn-credit-bureau-official.png";
 
 const Footer = () => {
   return (
@@ -70,12 +72,8 @@ const Footer = () => {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
               <div className="flex items-center space-x-6">
-                <div className="h-16 w-32 bg-white/10 rounded-lg flex items-center justify-center">
-                  <span className="text-xs text-white/80">Proudly SA</span>
-                </div>
-                <div className="h-16 w-32 bg-white/10 rounded-lg flex items-center justify-center">
-                  <span className="text-xs text-white/80">TPN Credit</span>
-                </div>
+                <img src={proudlySALogo} alt="Proudly South African" className="h-16 w-auto" />
+                <img src={tpnLogo} alt="TPN Credit Bureau" className="h-16 w-auto" />
               </div>
             </div>
             <p className="text-xs text-primary-foreground/50 text-center">
